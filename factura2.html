@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+	<html>
+		<head>
+			<title>Factura</title>
+			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="estilo2.css">
+			<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+			<meta charset="utf-8">
+			<script type="text/javascript" src="funciones.js"></script>
+		</head>
+		
+		<body>
+
+			<div class="container">
+
+        <div id="encabezado">
+
+					   <div class="row">
+               	  <div class="col-xs-6">
+    									<div id="titulo">DISFRO REPUESTOS
+    									</div>
+								  </div>
+               	  <div class="col-xs-3">
+  									<div id="fact">
+      									<span>Factura Nº:
+      									</span>
+                    </div>
+                  </div>  
+								  <div class="col-xs-3">
+									      <div id='nfact'>
+                            <input type='text' size="7">
+                            </input>
+									      </div>
+								  </div>
+						  </div>
+						
+
+
+    				<div class="row">
+              <div class="col-xs-4">
+                    <div id="sub1">de Oscar Rossi</div>
+                    </div>
+                <div class="col-xs-2">
+          					<span class="glyphicon glyphicon-text-background">
+          					</span>
+                      <div id="icono">
+                      </div>
+                </div>
+           		  <div class="col-xs-3">
+          					<span id='spfecha'>Fecha:
+          					</span>
+                </div>
+                <div class="col-xs-3">    
+          					<div id="fecha">
+                          <input type='date' size="5">
+                          </input>
+          					</div>
+                </div>    
+    				</div>
+          	<div class="row">
+              	<div class="col-xs-6">
+                    <div id="sub2">Repuestos para motores y tractores
+                    </div>
+                </div>
+              	<div class="col-xs-6">
+                    <div id="cuit1">CUIT: 20-12396317-3
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-xs-6">
+                        <div id="sub3">Filtros - Correas - Accesorios
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                    </div>
+    		    </div>
+         </div>   
+
+              <div id="datoscliente">
+                  <div class="row">
+                      <div class="col-xs-1">
+      					           <span>Cliente:
+      					           </span>
+                      </div>
+                      <div class="col-xs-11">     
+      					           <div id= 'cliente'>
+                                <input type='text' size="15">
+                                </input>
+      					           </div>
+                      </div>
+                  </div>              
+                  <div class="row">
+                      <div class="col-xs-1">
+                          <span>CUIT:
+                          </span>
+                      </div>
+      					      <div class="col-xs-9"> 
+                					<div id= 'cuit'>
+                                <input type='number' size="10">
+                                </input>
+                					</div>
+                      </div>    
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+              					<span>IVA:
+                        </span>
+                    </div>
+                    <div class="col-xs-11">    
+              					<div id= 'iva'>
+                              <select>
+                              <option value="resp">Responsable inscripto</option>
+                              <option value="final">Consumidor final</option>
+                              </select>
+              					</div> 
+                    </div>      
+                  </div>
+                </div>
+                
+
+
+                <div id="encdetalle">
+                  <div class="row">
+                      <div class="col-xs-1">Cantidad</div>
+                      <div class="col-xs-1">Nro.Interno</div>
+                      <div class="col-xs-3">Código</div>
+                      <div class="col-xs-6">Descripción</div>
+                      <div class="col-xs-1">Costo</div>  
+             			</div>
+                </div>
+
+                <div id="articulos">
+                    <div class="col-xs-1">
+                        <input type="number" style="width:50px">
+                        </input>
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="number" style="width:70px">
+                        </input>
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="text" style="width:250px">
+                        </input>
+                    </div>
+                    <div class="col-xs-6">
+                        <input type="text" style="width:550px">
+                        </input>
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="number" style="width:70px">
+                        </input>
+                    </div>
+                </div>
+
+                <div id="montos">
+                  <div class="row">
+                      <div class="col-xs-3">Subtotal</div>
+                      <div class="col-xs-3">IVA</div>
+                      <div class="col-xs-2">Descuento</div>
+                      <div class="col-xs-4" style=bold>Total</div>
+                                     
+            </div>
+          </div>
+       </div>
+		</body>
+	</html>

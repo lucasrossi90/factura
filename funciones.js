@@ -1,7 +1,7 @@
 function imprimir(){
-		var valores = getElementsByTagName('input');
+		var valores = document.getElementsByTagName("input");
 		var largo = valores.length;
-				for (var i = 0, i <= largo, i++){
+				for (var i = 0; i <= largo ;i++){
 					elem = valores[i];
 					cadaValor(elem);
 				}

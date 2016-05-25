@@ -2,37 +2,38 @@ body {align-content: center;}
 
 span {font-style: bold;}
 
-#titulo {font-size: 200%;
-		font-family: ubuntu;
-		padding-top: 15px;
-		padding-left: 100px;
-	}
+#titulo {
+  font-size: 200%;
+  font-family: ubuntu;
+  padding-top: 15px;
+  text-align: center;
+}
 
 #fact {	font-size: 135%;
 		padding-top: 15px;
 		font-family: times;
-		padding-left: 170px;
+		text-align: right;
 		}
 
 #nfact {padding-top: 15px;
 		font-size: 135%;
 		font-family: times;
-		padding-right: 200px;
 }
 	
 #sub1 {text-align: right;
 		font-family: times;
 		}
 
-span#spfecha{font-family: times;
+#spfecha{font-family: times;
 		font-size: 135%;
 		padding-top:10px;
 		padding-bottom: 20px;
-		padding-left:185px;
+		text-align:right;
 		}
 
 #fecha {font-size: 135%;
 		font-family: times;
+
 }
 
 #cuit1 {text-align: center;
@@ -73,25 +74,25 @@ span#spfecha{font-family: times;
 			padding-bottom:8px;
 			}	
 
-
-
 #datoscliente {text-align: left;
 				padding-top: 10px;
 				padding-bottom: 10px;
 				border-bottom-style: solid;}
 
-#cliente #cuit #iva #domicilio {text-align: left;
-								margin-left: -50px;
-									 }
-
 #montos {text-align: center;
-		margin-top: 720px;
+		margin-top: 100px;
 		border-bottom-style: solid;
 		border-top-style: solid;
 		padding-bottom: 5px;
-		padding-top: 5px;
+		padding-top: 10px;
 		background-color: lightgrey;
 		}
 
 div#articulos {padding-top: 10px;}
+
+.row {margin-bottom: 10px;}
+
+.plata {text-align: center;}
+
+
 		

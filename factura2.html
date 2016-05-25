@@ -8,7 +8,6 @@
 			<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 			<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 			<meta charset="utf-8">
-			<script type="text/javascript" src="funciones.js"></script>
 		</head>
 		
 		<body>
@@ -43,19 +42,16 @@
                     <div id="sub1">de Oscar Rossi</div>
                     </div>
                 <div class="col-xs-2">
-          					<span class="glyphicon glyphicon-text-background">
-          					</span>
-                      <div id="icono">
-                      </div>
-                </div>
+                    <div id="icono">
+                    </div>
+          			</div>
            		  <div class="col-xs-3">
-          					<span id='spfecha'>Fecha:
-          					</span>
+          					<div id='spfecha'>Fecha:
+          					</div>
                 </div>
                 <div class="col-xs-3">    
           					<div id="fecha">
-                          <input type='text' size="5">
-                          </input>
+                          <input type='date' size="5">
           					</div>
                 </div>    
     				</div>
@@ -98,7 +94,7 @@
                           <span>CUIT:
                           </span>
                       </div>
-      					      <div class="col-xs-9"> 
+      					      <div class="col-xs-11"> 
                 					<div id= 'cuit'>
                                 <input type='text' size="15">
                                 </input>
@@ -107,12 +103,18 @@
                   </div>
                   <div class="row">
                     <div class="col-xs-1">
-              					<span>IVA:
+              					<span>Tipo factura
                         </span>
+                    </div>      
+                    <div class="col-xs-11">
+                        <select onchange="cambiarIcono(this)">
+                            <option value="A">Factura "A"</option>
+                            <option value="B">Factura "B"</option>
+                            <option value="F">Consumidor final</option>
+                        </select> 
+                     </div>       
                     </div>
-                      
                   </div>
-                </div>
                 
 
 
@@ -127,8 +129,9 @@
                 </div>
 
                 <div id="articulos" class="productos">
-                    <div class="col-xs-1">
-                        <input type="number" style="width:50px">
+                  <div class="row prod">
+                     <div class="col-xs-1">
+                        <input type="number" style="width:50px" class="cant">
                         </input>
                     </div>
                     <div class="col-xs-1">
@@ -144,43 +147,300 @@
                         </input>
                     </div>
                     <div class="col-xs-1">
-                        <input type="number" style="width:70px">
+                        <input type="number" style="width:70px" class="costo">
                         </input>
                     </div>
+                  </div>
 
+                  <div class="row prod"> 
                     <div class="col-xs-1">
-                        <input type="number" style="width:50px">
-                        </input>
-                    </div>
-                    <div class="col-xs-1">
-                        <input type="number" style="width:70px">
-                        </input>
-                    </div>
-                    <div class="col-xs-3">
-                        <input type="text" style="width:250px">
-                        </input>
-                    </div>
-                    <div class="col-xs-6">
-                        <input type="text" style="width:550px">
-                        </input>
-                    </div>
-                    <div class="col-xs-1">
-                        <input type="number" style="width:70px">
-                        </input>
-                    </div>
-                </div>
+                          <input type="number" style="width:50px" class="cant">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px">
+                          </input>
+                      </div>
+                      <div class="col-xs-3">
+                          <input type="text" style="width:250px">
+                          </input>
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" style="width:550px">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px" class="costo">
+                          </input>
+                      </div>
+                  </div>
 
-                <button type="button" onclick="imprimir()">Terminar</button>
+                    <div class="row prod"> 
+                      <div class="col-xs-1">
+                          <input type="number" style="width:50px" class="cant">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px">
+                          </input>
+                      </div>
+                      <div class="col-xs-3">
+                          <input type="text" style="width:250px">
+                          </input>
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" style="width:550px">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px" class="costo">
+                          </input>
+                      </div>
+                  </div>
+
+                      <div class="row prod"> 
+                    <div class="col-xs-1">
+                          <input type="number" style="width:50px" class="cant">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px">
+                          </input>
+                      </div>
+                      <div class="col-xs-3">
+                          <input type="text" style="width:250px">
+                          </input>
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" style="width:550px">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px" class="costo">
+                          </input>
+                      </div>
+                  </div>
+
+                      <div class="row prod"> 
+                    <div class="col-xs-1">
+                          <input type="number" style="width:50px" class="cant">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px">
+                          </input>
+                      </div>
+                      <div class="col-xs-3">
+                          <input type="text" style="width:250px">
+                          </input>
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" style="width:550px">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px" class="costo">
+                          </input>
+                      </div>
+                  </div>
+
+                      <div class="row prod"> 
+                    <div class="col-xs-1">
+                          <input type="number" style="width:50px" class="cant">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px">
+                          </input>
+                      </div>
+                      <div class="col-xs-3">
+                          <input type="text" style="width:250px">
+                          </input>
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" style="width:550px">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px" class="costo">
+                          </input>
+                      </div>
+                  </div>
+
+                      <div class="row prod"> 
+                    <div class="col-xs-1">
+                          <input type="number" style="width:50px" class="cant">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px">
+                          </input>
+                      </div>
+                      <div class="col-xs-3">
+                          <input type="text" style="width:250px">
+                          </input>
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" style="width:550px">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px" class="costo">
+                          </input>
+                      </div>
+                  </div>
+
+                      <div class="row prod"> 
+                    <div class="col-xs-1">
+                          <input type="number" style="width:50px" class="cant">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px">
+                          </input>
+                      </div>
+                      <div class="col-xs-3">
+                          <input type="text" style="width:250px">
+                          </input>
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" style="width:550px">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px" class="costo">
+                          </input>
+                      </div>
+                  </div>
+
+                      <div class="row prod"> 
+                    <div class="col-xs-1">
+                          <input type="number" style="width:50px" class="cant">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px">
+                          </input>
+                      </div>
+                      <div class="col-xs-3">
+                          <input type="text" style="width:250px">
+                          </input>
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" style="width:550px">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px" class="costo">
+                          </input>
+                      </div>
+                  </div>
+
+                      <div class="row prod"> 
+                    <div class="col-xs-1">
+                          <input type="number" style="width:50px" class="cant">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px">
+                          </input>
+                      </div>
+                      <div class="col-xs-3">
+                          <input type="text" style="width:250px">
+                          </input>
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" style="width:550px">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px" class="costo">
+                          </input>
+                      </div>
+                  </div>
+
+                  <div class="row prod"> 
+                    <div class="col-xs-1">
+                          <input type="number" style="width:50px" class="cant">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px">
+                          </input>
+                      </div>
+                      <div class="col-xs-3">
+                          <input type="text" style="width:250px">
+                          </input>
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" style="width:550px">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px" class="costo">
+                          </input>
+                      </div>
+                  </div>
+
+                  <div class="row prod"> 
+                    <div class="col-xs-1">
+                          <input type="number" style="width:50px" class="cant">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px">
+                          </input>
+                      </div>
+                      <div class="col-xs-3">
+                          <input type="text" style="width:250px">
+                          </input>
+                      </div>
+                      <div class="col-xs-6">
+                          <input type="text" style="width:550px">
+                          </input>
+                      </div>
+                      <div class="col-xs-1">
+                          <input type="number" style="width:70px" class="costo">
+                          </input>
+                      </div>
+                  </div>
+
+
+                <button id="btnFin" type="button" onclick="imprimir()" style="display:block; margin:auto">Terminar</button>
 
                 <div id="montos">
                   <div class="row">
-                      <div class="col-xs-3">Subtotal</div>
-                      <div class="col-xs-3">IVA</div>
-                      <div class="col-xs-2">Descuento</div>
-                      <div class="col-xs-4" style=bold>Total</div>
-                                     
-            </div>
-          </div>
+                      <div class="col-xs-3">Subtotal
+                      </div>
+                      <div class="col-xs-3">IVA
+                      </div>
+                      <div class="col-xs-2">Descuento
+                      </div>
+                      <div class="col-xs-4" style=bold>Total
+                      </div>                                     
+                  </div>
+                </div>  
+
+               <div class="row plata">
+                 <div class="col-xs-3">
+                   <div id="subtotal">
+                   </div>
+                 </div>
+                 <div class="col-xs-3">
+                   <div id="montoIVA">
+                   </div>
+                 </div>
+                 <div class="col-xs-2">  
+                   <div id="descuento">
+                   </div>
+                 </div>
+                 <div class="col-xs-4">
+                   <div id="total">
+                   </div>
+                 </div>  
+               </div>   
+      
        </div>
+      <script type="text/javascript" src="funciones.js"></script>
 		</body>
 	</html>

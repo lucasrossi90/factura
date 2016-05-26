@@ -78,11 +78,12 @@ span {font-style: bold;}
 }
 
 	#montos {text-align: center;
-		margin-top: 100px;
+		margin-top: 325px;
 		border-bottom-style: solid;
 		border-top-style: solid;
 		padding-top: 10px;
 		background-color: lightgrey;
+		position: static;
 	}
 
 
@@ -90,9 +91,11 @@ span {font-style: bold;}
 
 	.row {margin-bottom: 10px;}
 
-	.plata {text-align: center;}
+	.plata {text-align: center;
+		position: static;}
 
-	.prod {text-align: center;}
+	.prod {text-align: center;
+			content-align: center;}
 
 
 

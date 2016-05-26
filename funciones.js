@@ -6,6 +6,8 @@ function imprimir(){
 	var boton = document.getElementById("btnFin");   
 
 	quitarBoton(boton);
+	quitarDescuento();
+	window.print();
 
 }
 
@@ -24,10 +26,30 @@ function calcularCostos(){
 
       desc = ((document.getElementById("inputDesc").value || 0)/100);
       impDesc = subtot * desc;
-      document.getElementById("subtotal").innerHTML = subtot;
-      document.getElementById("montoIVA").innerHTML= subtot * 0.21;
-      document.getElementById('total').innerHTML = (subtot * 1.21) - (impDesc);
-      document.getElementById('descuento').innerHTML = impDesc;
+      var opcion = document.getElementsByTagName('select')[0].value;
+
+
+      switch (opcion) {
+      	case "A": 
+			      document.getElementById("subtotal").innerHTML = subtot;
+			      document.getElementById("montoIVA").innerHTML= subtot * 0.21;
+			      document.getElementById('total').innerHTML = (subtot * 1.21) - (impDesc);
+			      document.getElementById('descuento').innerHTML = impDesc;
+			break;
+
+		case "B": 
+				  document.getElementById("subtotal").innerHTML = subtot;
+			      document.getElementById("montoIVA").innerHTML= "<span>-</span>";
+			      document.getElementById('total').innerHTML = subtot;
+			      document.getElementById('descuento').innerHTML = impDesc;
+
+		case "F": 
+				  document.getElementById("subtotal").innerHTML = subtot;
+			      document.getElementById("montoIVA").innerHTML= "<span>-</span>";
+			      document.getElementById('total').innerHTML = subtot;
+			      document.getElementById('descuento').innerHTML = impDesc;
+
+      }
 }
 
 function ponerValores(){
@@ -46,6 +68,11 @@ function cadaValor(elem){
 
 function quitarBoton(btn){
 	btn.style = "display:none";
+}
+
+function quitarDescuento(){
+	row = document.getElementById('rowDesc');
+	row.style = "display:none";
 }
 
 

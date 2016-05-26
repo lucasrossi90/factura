@@ -3,96 +3,96 @@ body {align-content: center;}
 span {font-style: bold;}
 
 #titulo {
-  font-size: 200%;
-  font-family: ubuntu;
-  padding-top: 15px;
-  text-align: center;
+	font-size: 200%;
+	font-family: ubuntu;
+	padding-top: 15px;
+	text-align: center;
 }
 
 #fact {	font-size: 135%;
-		padding-top: 15px;
-		font-family: times;
-		text-align: right;
-		}
+	padding-top: 15px;
+	font-family: times;
+	text-align: right;
+}
 
 #nfact {padding-top: 15px;
-		font-size: 135%;
-		font-family: times;
+	font-size: 135%;
+	font-family: times;
 }
-	
+
 #sub1 {text-align: right;
-		font-family: times;
-		}
+	   font-family: times;
+}
 
 #spfecha{font-family: times;
-		font-size: 135%;
-		padding-top:10px;
-		padding-bottom: 20px;
-		text-align:right;
-		}
+	font-size: 135%;
+	padding-top:10px;
+	padding-bottom: 20px;
+	text-align:right;
+}
 
 #fecha {font-size: 135%;
 		font-family: times;
-
 }
 
 #cuit1 {text-align: center;
-		font-family: times;
-		font-size: 135%;
-		}
+	font-family: times;
+	font-size: 135%;
+}
 
 #sub2, #sub3 {text-align: center;
-			font-family: Gandhi;
-			font-style: italic;
-			padding-right: 50px;
-			}
+	font-family: Gandhi;
+	font-style: italic;
+	padding-right: 50px;
+}
 
 #sub3 {padding-bottom: 10px;}
-
-.glyphicon {
-    font-size: 300%;
-    padding-left: 100px;
-   }
+ 
+#icono {font-size: 300%;
+	text-align: right;
+}
 
 #encabezado {padding-bottom: 10px;
-			border-bottom-style: solid;
-			border-bottom-color: black;
-			}
+	border-bottom-style: solid;
+	border-bottom-color: black;
+}
 
 #iva {padding-right: 100px;}
 
 #detalle {text-align: center;
-		background-color: lightgrey;
+	background-color: lightgrey;
+	border-bottom-style: solid;
+	padding-bottom: 0;}
+
+	#encdetalle {background-color: lightgrey;
+		text-align: center;
+		border-bottom-color: black;
 		border-bottom-style: solid;
-		padding-bottom: 0;}
+		padding-top:10px;
+	}	
 
-#encdetalle {background-color: lightgrey;
-			text-align: center;
-			border-bottom-color: black;
-			border-bottom-style: solid;
-			padding-top:8px;
-			padding-bottom:8px;
-			}	
+	#datoscliente {text-align: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom-style: solid;
+}
 
-#datoscliente {text-align: left;
-				padding-top: 10px;
-				padding-bottom: 10px;
-				border-bottom-style: solid;}
-
-#montos {text-align: center;
+	#montos {text-align: center;
 		margin-top: 100px;
 		border-bottom-style: solid;
 		border-top-style: solid;
-		padding-bottom: 5px;
 		padding-top: 10px;
 		background-color: lightgrey;
-		}
-
-div#articulos {padding-top: 10px;}
-
-.row {margin-bottom: 10px;}
-
-.plata {text-align: center;}
+	}
 
 
-		
+	div#articulos {padding-top: 10px;}
+
+	.row {margin-bottom: 10px;}
+
+	.plata {text-align: center;}
+
+	.prod {text-align: center;}
+
+
+

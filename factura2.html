@@ -82,9 +82,9 @@
       					           <span>Cliente:
       					           </span>
                       </div>
-                      <div class="col-xs-11">     
+                      <div class="col-xs-7">     
       					           <div id= 'cliente'>
-                                <input type='text' size="15">
+                                <input type='text' size="25">
                                 </input>
       					           </div>
                       </div>
@@ -96,14 +96,14 @@
                       </div>
       					      <div class="col-xs-11"> 
                 					<div id= 'cuit'>
-                                <input type='text' size="15">
+                                <input type='text' size="20">
                                 </input>
                 					</div>
-                      </div>    
+                      </div>
                   </div>
                   <div class="row">
                     <div class="col-xs-1">
-              					<span>Tipo factura
+              					<span>Tipo factura:
                         </span>
                     </div>      
                     <div class="col-xs-11">
@@ -114,13 +114,22 @@
                         </select> 
                      </div>       
                     </div>
-                  </div>
-                
+                    <div class="row">
+                    <div class="col-xs-1">
+                        <span>Descuento:
+                        </span>
+                    </div>      
+                    <div class="col-xs-11">
+                        <input id="inputDesc" type="number">
+                        </input>  
+                     </div>       
+                    </div>  
+                   </div>
 
 
                 <div id="encdetalle">
                   <div class="row">
-                      <div class="col-xs-1">Cantidad</div>
+                      <div class="col-xs-1">Cant.</div>
                       <div class="col-xs-1">Nro.Interno</div>
                       <div class="col-xs-3">Código</div>
                       <div class="col-xs-6">Descripción</div>
@@ -405,8 +414,11 @@
                       </div>
                   </div>
 
+                  <div class="col-xs-12">
+                      <button id="btnFin" class="btn btn-success btn-lg" type="button" onclick="imprimir()" style="display:block; margin:auto">Terminar
+                      </button>
+                  </div>
 
-                <button id="btnFin" type="button" onclick="imprimir()" style="display:block; margin:auto">Terminar</button>
 
                 <div id="montos">
                   <div class="row">
@@ -414,7 +426,7 @@
                       </div>
                       <div class="col-xs-3">IVA
                       </div>
-                      <div class="col-xs-2">Descuento
+                      <div class="col-xs-2">Descuento(%)
                       </div>
                       <div class="col-xs-4" style=bold>Total
                       </div>                                     

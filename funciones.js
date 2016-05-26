@@ -6,7 +6,7 @@ function imprimir(){
 	var boton = document.getElementById("btnFin");   
 
 	quitarBoton(boton);
-	quitarDescuento();
+	quitarOpciones();
 	window.print();
 
 }
@@ -70,9 +70,12 @@ function quitarBoton(btn){
 	btn.style = "display:none";
 }
 
-function quitarDescuento(){
-	row = document.getElementById('rowDesc');
-	row.style = "display:none";
+function quitarOpciones(){
+	row1 = document.getElementById('rowDesc');
+	row1.style = "display:none";
+
+	row2 = document.getElementById('tip');
+	row2.style = "display:none";
 }
 
 
